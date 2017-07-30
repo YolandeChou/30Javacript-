@@ -6,7 +6,7 @@
   <i>padding:var(--spacing)</i><br>
 3.HTML5中的自定义数据属性及访问方法。HTML5可为元素添加非标准的自定义属性，只需要加上‘data-'前缀，可通过dataset属性来访问这些值。<br>
   <i>input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px"<br></i>
-  <i>const suffix=this.dataset.sizing||''</i>
+  <i>const suffix=this.dataset.sizing||''</i><br>
 4.模板字符串，在之前的两节练习中也出现过模板字符串，还需多加练习使用<i>(`--${this.name}`</i><br>
 5.(还有一个不太清楚的地方先记下来） <i>document.documentElement.style.setProperty(`--${this.name}`,this.value+suffix)</i>
 </p>
