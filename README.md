@@ -12,15 +12,13 @@
         obj[item]++;
         return obj;
   },{})</code><br>这个地方我还是不太明白，多看看书吧~</p><br>
-  <br>
-  <p>今天
-  又做了一个Day5，这章练习的话我觉得js已经不是重点，而是display:flex的灵活运用了，我之前联系网页制作时几乎没用过flex，所以说这份练习对我来说就是全新的。也记录下一些比较有用的知识：</p><br>
-<p> 1.针对 Flex items 的特性（Children)</P><br>
+  <p>今天又做了一个Day5，这章练习的话我觉得js已经不是重点，而是display:flex的灵活运用了，我之前联系网页制作时几乎没用过flex，所以说这份练习对我来说就是全新的。也记录下一些比较有用的知识：</p><br>
+<p> 1.针对 Flex items 的特性（Children)</P>
 <ul><li>flex-growth：伸展值</li>
 <li>flex-shrink：可接受的压缩值</li>
 <li>flex-basis：元素默认的尺寸值</li>
 <li>flex：以上三个值按顺序的缩写</li></ul>
-<p>2.针对 Flex container 的特性（Parent）</p><br>
+<p>2.针对 Flex container 的特性（Parent）</p>
 <ul><li>display: flex：将这个元素设置成弹性盒子</li>
 <li>flex-direction：主轴方向,row：横向column,：纵向</li>
 <li>justify-content：沿主轴的的对齐方式</li>
