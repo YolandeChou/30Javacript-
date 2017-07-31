@@ -11,8 +11,22 @@
       }
         obj[item]++;
         return obj;
-  },{})</code><br>这个地方我还是不太明白，多看看书吧~</p>
-  
+  },{})</code><br>这个地方我还是不太明白，多看看书吧~</p><br>
+  <br>
+  <p>今天
+  又做了一个Day5，这章练习的话我觉得js已经不是重点，而是display:flex的灵活运用了，我之前联系网页制作时几乎没用过flex，所以说这份练习对我来说就是全新的。也记录下一些比较有用的知识：</p><br>
+<p> 1.针对 Flex items 的特性（Children)</P><br>
+<ul><li>flex-growth：伸展值</li>
+<li>flex-shrink：可接受的压缩值</li>
+<li>flex-basis：元素默认的尺寸值</li>
+<li>flex：以上三个值按顺序的缩写</li></ul>
+<p>2.针对 Flex container 的特性（Parent）</p><br>
+<ul><li>display: flex：将这个元素设置成弹性盒子</li>
+<li>flex-direction：主轴方向,row：横向column,：纵向</li>
+<li>justify-content：沿主轴的的对齐方式</li>
+<li>align-items：沿侧轴的对齐方式</li>
+<li>align-content：子元素中文本沿侧轴的对齐方式（只有一行时无效）</li></ul>
+
 <h2>2017.7.30</h2>
 <p>今天在学习的时候，无意间看到了别人做的30Days的学习记录，看了之后我的疑问基本都很快解决了。不过我觉得在看之前我得有自己思考，我得自己尝试调试去感受新的知识，而不不是依赖别人的经验，虽然确实能学到很多东西。同样，还是要分享一些所学所得：<br>
 1.CSS中的伪类，:root选择器，匹配文档根元素，常用于声明全局CSS变量<br>
