@@ -1,5 +1,18 @@
 # 30Javacript-
-<h2>2017.2.30</h2>
+<h2>2017.7.31</h2>
+<p>今天一直在纠结reduce的用法，在网上找了很多但发现大家的例子都很简单，还是无法帮助我理解这一点，不管怎样现在先记下来。这次的练习都是一些数组的操作，因为才看过《jQuery inAction》，所以对数组还是比较清晰的，不过依然有一些不清楚的地方，现在把这些解决了和未解决的问题先一起放上来：<br>
+ 1.arryBoject.sort(sortBy)用于数组元素进行排序，sortBy，为可选参数，规定排序，必须为函数。在这次的练习中，都巧妙地利用了return -1 or 1 来达到理想的排序效果。<br>
+ <i>const ordered=inventors.sort((a,b)=>a.year>=b.year?1:-1);</i><br>
+ 2.arry.reduce(function(total,currentValue,currentIndex,arr),initialValue).接受一个函数作为累加器，数组中的每一个值从左到右开始缩减，最后计算成一个值。<br>
+ <code>const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+    const transportation = data.reduce(function(obj,item){
+      if(!obj[item]){
+        obj[item]=0;
+      }
+        obj[item]++;
+        return obj;
+  },{})</code></p>
+<h2>2017.7.30</h2>
 <p>今天在学习的时候，无意间看到了别人做的30Days的学习记录，看了之后我的疑问基本都很快解决了。不过我觉得在看之前我得有自己思考，我得自己尝试调试去感受新的知识，而不不是依赖别人的经验，虽然确实能学到很多东西。同样，还是要分享一些所学所得：<br>
 1.CSS中的伪类，:root选择器，匹配文档根元素，常用于声明全局CSS变量<br>
 2.使用CSS变量实现改变CSS参数。用到了CSS variable，命名为：--变量名，应用为：var(--XXX)<br>
