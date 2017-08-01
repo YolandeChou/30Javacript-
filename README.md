@@ -1,11 +1,13 @@
 # 30Javacript-
 <h2>2017.8.1</h2>
->p>这一章的练习有很多有用的知识点，是我觉得在开发中会经常用到的，虽然之前有接触过但是还是很有多地方有些模糊，通过这次的练习也更深一步的巩固了我这方面的知识。下面就把我记下来的知识点分享下：<br>
+>p>这一章Day6的练习有很多有用的知识点，是我觉得在开发中会经常用到的，虽然之前有接触过但是还是很有多地方有些模糊，通过这次的练习也更深一步的巩固了我这方面的知识。下面就把我记下来的知识点分享下：<br>
 1.RegExp对象，表示正则表达式。Regexp(pattern,attributes),参数pattern是一个字符串，指定了正则表达式的模式或其他正则表达式；attribute：i（对大小写不敏感），g（全局），m（执行多行匹配）。正则表达式是一个难点，只有熟练才能掌握，记下一个方便查找<a href="http://www.jb51.net/shouce/jquery1.82/regexp.html">正则表达式</a>的网站。<br>
 2.fetch(input, init).then(function(response) { ... })的使用;<br>
 <code>fetch(endpoint)
   .then(blob=>blob.json())
-  .then(data=>cities.push(...data))</code>;</p>
+  .then(data=>cities.push(...data))</code>;</p><br>
+<p>接着把Day7的例子也练习了一遍，里面是几种简单常用到的属性方法，因为很简单所以不再赘述了。
+</p>
 <h2>2017.7.31</h2>
 <p>今天一直在纠结reduce的用法，在网上找了很多但发现大家的例子都很简单，还是无法帮助我理解这一点，不管怎样现在先记下来。这次的练习都是一些数组的操作，因为才看过《jQuery inAction》，所以对数组还是比较清晰的，不过依然有一些不清楚的地方，现在把这些解决了和未解决的问题先一起放上来：<br>
  1.arryBoject.sort(sortBy)用于数组元素进行排序，sortBy，为可选参数，规定排序，必须为函数。在这次的练习中，都巧妙地利用了return -1 or 1 来达到理想的排序效果。<br>
