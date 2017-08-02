@@ -1,4 +1,23 @@
 # 30Javacript-
+<h2>2017.8.2</h2>
+<p>Day8的练习非常有意思，之前在学习js的时候都跳过canvas部分，这次也找了相关知识系统的学习了一下。但是要做出更多效果还需要日后的其他练习。下面就将自己的整理的canvas知识搬上来：<br>
+1.canvas标签，定义图形，只是图形容器，必须用脚本来绘制图形。
+<ul>相关属性：
+  <li>width、height分别设置canvas的宽和高</li>
+  <li>getContext()方法可返回一个对象</li>
+  <li>strokeStyle,设置笔触颜色\渐变、模式</li>
+ <ul>线条样式
+   <li>lineCap:设置结束端样式 butt|round|square</li>
+   <li>lineJoin:设置两条线相交时，所创的拐角类型 bevel|round|miter</li>
+   <li>lineWidth:设置当前线条宽度</li>
+  </ul>
+  <ul>路径：
+    <li>beginPath:起始一条路径，或重置当前路径</li>
+    <li>moveTo():把路径移动到画布中的指定位置，不创建线条</li>
+    <li>lineTo():添加一个新点，然后在画布中创建从该点到最后指定点线条</li>
+    <li>绘制已定义的路径</li>
+  </ul>
+  2.颜色表示HSL（H,S,L)H色调（0~360），S饱和度（0~100%），L亮度（0~100%）</p>
 <h2>2017.8.1</h2>
 >p>这一章Day6的练习有很多有用的知识点，是我觉得在开发中会经常用到的，虽然之前有接触过但是还是很有多地方有些模糊，通过这次的练习也更深一步的巩固了我这方面的知识。下面就把我记下来的知识点分享下：<br>
 1.RegExp对象，表示正则表达式。Regexp(pattern,attributes),参数pattern是一个字符串，指定了正则表达式的模式或其他正则表达式；attribute：i（对大小写不敏感），g（全局），m（执行多行匹配）。正则表达式是一个难点，只有熟练才能掌握，记下一个方便查找<a href="http://www.jb51.net/shouce/jquery1.82/regexp.html">正则表达式</a>的网站。<br>
