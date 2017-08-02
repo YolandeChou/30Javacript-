@@ -6,6 +6,7 @@
   <li>width、height分别设置canvas的宽和高</li>
   <li>getContext()方法可返回一个对象</li>
   <li>strokeStyle,设置笔触颜色\渐变、模式</li>
+ </ul>
  <ul>线条样式
    <li>lineCap:设置结束端样式 butt|round|square</li>
    <li>lineJoin:设置两条线相交时，所创的拐角类型 bevel|round|miter</li>
