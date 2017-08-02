@@ -18,7 +18,14 @@
     <li>lineTo():添加一个新点，然后在画布中创建从该点到最后指定点线条</li>
     <li>绘制已定义的路径</li>
   </ul>
-  2.颜色表示HSL（H,S,L)H色调（0~360），S饱和度（0~100%），L亮度（0~100%）</p>
+  2.颜色表示HSL（H,S,L)H色调（0~360），S饱和度（0~100%），L亮度（0~100%）</p><br>
+  <p>在day9的例子中，主要是console的用法，这对调试具有很大的帮助，所以我也将在网上找到的知识点罗列出来：<br>
+  1.console.assert(exp,mes)对输入的表达式exp进行判断，为true时不执行在控制台输出mes<br>
+  2.console.conut([mes]),统计函数被执行的次数<br>
+  3.console.dir(obj|dom),可以详细的查看对象的方法，将dom节点以dom树的结构进行输出<br>
+  4.consolr.group([sign])/console.groipCollapsed([sign]) ... console.groupEnd()。将打印的信息以组的形式显示出来<br>
+  5.console.time(name)...console.timeEnd(name)。console.time(name)表示几时开始，console.timeEnd(name)表示计时结束，这两个方法配合使用可以用来统计执行某个函数所用的时间。
+</p>
 <h2>2017.8.1</h2>
 >p>这一章Day6的练习有很多有用的知识点，是我觉得在开发中会经常用到的，虽然之前有接触过但是还是很有多地方有些模糊，通过这次的练习也更深一步的巩固了我这方面的知识。下面就把我记下来的知识点分享下：<br>
 1.RegExp对象，表示正则表达式。Regexp(pattern,attributes),参数pattern是一个字符串，指定了正则表达式的模式或其他正则表达式；attribute：i（对大小写不敏感），g（全局），m（执行多行匹配）。正则表达式是一个难点，只有熟练才能掌握，记下一个方便查找<a href="http://www.jb51.net/shouce/jquery1.82/regexp.html">正则表达式</a>的网站。<br>
