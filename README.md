@@ -1,6 +1,6 @@
 # 30Javacript-
 <h2>201.8.7</h2>
-<p></p>
+<p>在Day13练习中，在监听事件中用到了debounce，这样做的目的是避免每次滚动都触发事件，从而减少js成本。设置图片何时出现，合适消失，需要先在脑海中有个大概的印象，有一个自己的预想效果图，然后再通过window.innerHeight,window.scollY,obj.offsetTop,obj.height等进行设置合适的函数达到想要的效果。</p>
 <h2>2017.8.3</h2>
 <p>Day11是一个关于视频播放的练习，在之前我只做过相关的CSS练习，这次正好把脚本也配上了。这中间主要是video标签的使用，video的属性和方法从字面上就可以很清晰的理解它的作用。在这里我也记录一些我学到的内容：<br>
   1.<a href="http://www.w3school.com.cn/jsref/dom_obj_video.asp">video标签的方法与属性</a>，网上记录很清楚，且没什么难点。<br>
