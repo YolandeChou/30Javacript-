@@ -1,4 +1,6 @@
 # 30Javacript-
+<h2>201.8.7</h2>
+<p></p>
 <h2>2017.8.3</h2>
 <p>Day11是一个关于视频播放的练习，在之前我只做过相关的CSS练习，这次正好把脚本也配上了。这中间主要是video标签的使用，video的属性和方法从字面上就可以很清晰的理解它的作用。在这里我也记录一些我学到的内容：<br>
   1.<a href="http://www.w3school.com.cn/jsref/dom_obj_video.asp">video标签的方法与属性</a>，网上记录很清楚，且没什么难点。<br>
