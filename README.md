@@ -1,6 +1,9 @@
 # 30Javacript-
 <h2>201.8.7</h2>
-<p>在Day13练习中，在监听事件中用到了debounce，这样做的目的是避免每次滚动都触发事件，从而减少js成本。设置图片何时出现，合适消失，需要先在脑海中有个大概的印象，有一个自己的预想效果图，然后再通过window.innerHeight,window.scollY,obj.offsetTop,obj.height等进行设置合适的函数达到想要的效果。</p>
+<p>在Day13练习中，在监听事件中用到了debounce，这样做的目的是避免每次滚动都触发事件，从而减少js成本。<br>
+  1.设置图片何时出现，合适消失，需要先在脑海中有个大概的印象，有一个自己的预想效果图，然后再通过window.innerHeight, window.scollY, obj.offsetTop, obj.height等进行设置合适的函数达到想要的效果。<br>
+2.box-sizing 属性允许您以特定的方式定义匹配某个区域的特定元素。假如需要并排放置两个带边框的框，可通过将 box-sizing 设置为 "border-box"。这可令浏览器呈现出带有指定宽度和高度的框，并把边框和内边距放入框中。<br>
+3.tansform属性下的，translateX,scale(num),可分别改变图片位置和大小，实行一定的动画效果。</p>
 <h2>2017.8.3</h2>
 <p>Day11是一个关于视频播放的练习，在之前我只做过相关的CSS练习，这次正好把脚本也配上了。这中间主要是video标签的使用，video的属性和方法从字面上就可以很清晰的理解它的作用。在这里我也记录一些我学到的内容：<br>
   1.<a href="http://www.w3school.com.cn/jsref/dom_obj_video.asp">video标签的方法与属性</a>，网上记录很清楚，且没什么难点。<br>
