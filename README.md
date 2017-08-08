@@ -7,7 +7,8 @@
  storage.getItem(keyName),接受一个键名作为参数，并返回对应键名的值。<br>
  1.向ul中添加li：<code>platesList.innerHTML=plates.map((plate,i)=>{...}).jion('')</code>
  2.this.reset(),数据输入完成后清空input的内容
- 3.```javascript
+ 3.
+ ```javascript
   const item={
       text,
       done:false
@@ -15,15 +16,16 @@
  ```
  text是text=text的Es6中的省略写法；
  4.e.preventDefault()，阻止默认事件的触发，防止在提交后页面自己刷新；
- 5.```javascript
- // 在关闭浏览器之后清除缓存
+ 5.
+ ```Javascript
+// 在关闭浏览器之后清除缓存
     window.onbeforeunload = function (e) {
       localStorage.removeItem('items');
       // let confirmationMessage = "\o/";
       e.returnValue = confirmationMessage; // Gecko, Trident, Chrome 34+
       // return confirmationMessage; // 如果有返回值的话，就会弹出确认框。
- };
- ```
+    };
+```
 </p>
 <p>Day14练习主要是关于数组和对象的复制方法，首先是数组：<code>const team2 = players.slice();const team3 = [].concat(players);const team4 = [...players];const team5 = Array.from(players);</code>对象：<code>const dev = Object.assign({}, wes);const dev2 = JSON.parse(JSON.stringify(wes));</code><br>
   对于这几种方法进行总结：<br>
