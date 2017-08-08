@@ -1,10 +1,30 @@
 # 30Javacript-
 <h2>2017.8.8</h2>
+<p>Day15主要是localStorageS的练习：HTML5中有两种在客户端中存储数据的新方法：<br>
+ localStorage--没有时间限制的数据存储，sessionStorage--针对一个session的数据存储。
+ 两种在练习中用到的方法：<br>
+ Storage.setItem(keyName,keyValue),接受一个键名和值作为参数，将会把键名添加到存储中，如果键名已经存在则更新对应的值。<br>
+ storage.getItem(keyName),接受一个键名作为参数，并返回对应键名的值。<br>
+ 1.向ul中添加li：<code>platesList.innerHTML=plates.map((plate,i)=>{...}).jion('')</code>
+ 2.this.reset(),数据输入完成后清空input的内容
+ 3.<code>const item={
+      text,
+      done:false
+ }</code>text是text=text的Es6中的省略写法；
+ 4.e.preventDefault()，阻止默认事件的触发，防止在提交后页面自己刷新；
+ 5.<code>// 在关闭浏览器之后清除缓存
+    window.onbeforeunload = function (e) {
+      localStorage.removeItem('items');
+      // let confirmationMessage = "\o/";
+      e.returnValue = confirmationMessage; // Gecko, Trident, Chrome 34+
+      // return confirmationMessage; // 如果有返回值的话，就会弹出确认框。
+ };</code>
+</p>
 <p>Day14练习主要是关于数组和对象的复制方法，首先是数组：<code>const team2 = players.slice();const team3 = [].concat(players);const team4 = [...players];const team5 = Array.from(players);</code>对象：<code>const dev = Object.assign({}, wes);const dev2 = JSON.parse(JSON.stringify(wes));</code><br>
   对于这几种方法进行总结：<br>
   1.concat()方法用于连接两个或多个数组，该方法不会改变原来的数组。arrayObject.concat(arrayX,arryX...)<br>
   2.Object.asssign()用于将所有可枚举的属性值从一个或多个源的对象复制到目标对象，返回目标对象。Object.assign(target,..sources)<br>
-  3.JSON.stringify()将js对象转换为JSON对象，JSON.parse()将JSON对象转换为js对象
+  3.JSON.stringify()将js对象转换为JSON对象，JSON.parse()将JSON对象转换为js对象</p>
 <h2>2017.8.7</h2>
 <p>在Day13练习中，在监听事件中用到了debounce，这样做的目的是避免每次滚动都触发事件，从而减少js成本。<br>
   1.设置图片何时出现，合适消失，需要先在脑海中有个大概的印象，有一个自己的预想效果图，然后再通过window.innerHeight, window.scollY, obj.offsetTop, obj.height等进行设置合适的函数达到想要的效果。<br>
