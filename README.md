@@ -5,15 +5,15 @@
  两种在练习中用到的方法：<br>
  Storage.setItem(keyName,keyValue),接受一个键名和值作为参数，将会把键名添加到存储中，如果键名已经存在则更新对应的值。<br>
  storage.getItem(keyName),接受一个键名作为参数，并返回对应键名的值。<br>
- 1.向ul中添加li：<code>platesList.innerHTML=plates.map((plate,i)=>{...}).jion('')</code>
- 2.this.reset(),数据输入完成后清空input的内容
+ 1.向ul中添加li：<code>platesList.innerHTML=plates.map((plate,i)=>{...}).jion('')</code><br>
+ 2.this.reset(),数据输入完成后清空input的内容<br>
  3. <code>
   const item={ <br>
       text, <br>
       done:false <br>
  } </code>
- text是text=text的Es6中的省略写法；
- 4.e.preventDefault()，阻止默认事件的触发，防止在提交后页面自己刷新；
+ text是text=text的Es6中的省略写法；<br>
+ 4.e.preventDefault()，阻止默认事件的触发，防止在提交后页面自己刷新；<br>
  5. <code>
 // 在关闭浏览器之后清除缓存 <br>
     window.onbeforeunload = function (e) { <br>
