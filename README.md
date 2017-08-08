@@ -1,5 +1,11 @@
 # 30Javacript-
-<h2>201.8.7</h2>
+<h2>2017.8.8</h2>
+<p>Day14练习主要是关于数组和对象的复制方法，首先是数组：<code>const team2 = players.slice();const team3 = [].concat(players);const team4 = [...players];const team5 = Array.from(players);</code>对象：<code>const dev = Object.assign({}, wes);const dev2 = JSON.parse(JSON.stringify(wes));</code><br>
+  对于这几种方法进行总结：<br>
+  1.concat()方法用于连接两个或多个数组，该方法不会改变原来的数组。arrayObject.concat(arrayX,arryX...)<br>
+  2.Object.asssign()用于将所有可枚举的属性值从一个或多个源的对象复制到目标对象，返回目标对象。Object.assign(target,..sources)<br>
+  3.JSON.stringify()将js对象转换为JSON对象，JSON.parse()将JSON对象转换为js对象
+<h2>2017.8.7</h2>
 <p>在Day13练习中，在监听事件中用到了debounce，这样做的目的是避免每次滚动都触发事件，从而减少js成本。<br>
   1.设置图片何时出现，合适消失，需要先在脑海中有个大概的印象，有一个自己的预想效果图，然后再通过window.innerHeight, window.scollY, obj.offsetTop, obj.height等进行设置合适的函数达到想要的效果。<br>
 2.box-sizing 属性允许您以特定的方式定义匹配某个区域的特定元素。假如需要并排放置两个带边框的框，可通过将 box-sizing 设置为 "border-box"。这可令浏览器呈现出带有指定宽度和高度的框，并把边框和内边距放入框中。<br>
