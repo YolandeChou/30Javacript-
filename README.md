@@ -1,5 +1,10 @@
 # 30Javacript-
 <h2>2017.8.9</h2>
+<p>Day18中map与reduce的使用技巧：<code>const seconds = timeNodes.map(time => time.dataset.time)
+                         .map(timeCode => {
+                          const [mins,secs] = timeCode.split(':').map(parseFloat);
+                          return mins*60+secs;
+                         }).reduce((total,vidSeconds) => total+vidSeconds);</code></p>
 <p>Day17中一个值得留意的表达式：<code>const sortedBands = bands.sort((a, b) => strip(a) > strip(b) ? 1 : -1);</code></p>
 <h2>2017.8.8</h2>
 <p>Day16练习了鼠标事件。<br>
