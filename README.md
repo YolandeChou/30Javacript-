@@ -1,4 +1,6 @@
 # 30Javacript-
+<h2>2017.8.9</h2>
+<p>Day17中一个值得留意的表达式：<code>const sortedBands = bands.sort((a, b) => strip(a) > strip(b) ? 1 : -1);</code></p>
 <h2>2017.8.8</h2>
 <p>Day16练习了鼠标事件。<br>
  <ul>鼠标点击事件的几个属性实例
