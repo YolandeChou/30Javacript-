@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Get User Media Code Along!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="photobooth">
+    <div class="controls">
+      <button onClick="takePhoto()">Take Photo</button>
+<!--       <div class="rgb">
+        <label for="rmin">Red Min:</label>
+        <input type="range" min=0 max=255 name="rmin">
+        <label for="rmax">Red Max:</label>
+        <input type="range" min=0 max=255 name="rmax">
+
+        <br>
+
+        <label for="gmin">Green Min:</label>
+        <input type="range" min=0 max=255 name="gmin">
+        <label for="gmax">Green Max:</label>
+        <input type="range" min=0 max=255 name="gmax">
+
+        <br>
+
+        <label for="bmin">Blue Min:</label>
+        <input type="range" min=0 max=255 name="bmin">
+        <label for="bmax">Blue Max:</label>
+        <input type="range" min=0 max=255 name="bmax">
+      </div> -->
+    </div>
+
+    <canvas class="photo"></canvas>
+    <video class="player"></video>
+    <div class="strip"></div>
+  </div>
+
+  <audio class="snap" src="http://wesbos.com/demos/photobooth/snap.mp3" hidden></audio>
+
+  <script>
+  const video = document.querySelector('.player');
+const canvas = document.querySelector('.photo');
+const ctx = canvas.getContext('2d');
+const strip = document.querySelector('.strip');
+const snap = document.querySelector('.snap');
+
+function getVideo(){
+	navigator.mediaDevices.getUserMedia({video:true,audio:false})
+	         .then(localMediaStream => {
+	         	console.log(localMediaStream);
+	         	video.src = window.URL.createObjectURL(localMediaStream);
+	         	video.play();
+	         }).catch(err =>{
+	         	console.error('OH,NO!!',err);
+	         })
+};
+function painToCanvas(){
+	const width=video.videoWidth;
+	const height=video.videoHeight;
+	canvas.width=width;
+	canvas.height=height;
+	return setInterval(() => {
+       ctx.drawImage(video,0,0,width,height);
+	},16);
+	
+};
+
+function takePhoto(){
+	snap.currentTime = 0;
+	snap.play();
+	const data = canvas.toDataURL('image/jpeg');
+	let link = document.createElement('a');
+	link.setAttribute('download','handsome')
+	link.href=data;
+	link.innerHTML = `<image src="${data}" alt="Handsome Man" />`
+	strip.insertBefore(link,strip.firsChild);
+}
+getVideo();
+video.addEventListener('canplay',painToCanvas);
+
+  </script>
+
+</body>
+</html>
