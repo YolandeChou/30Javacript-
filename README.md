@@ -1,4 +1,13 @@
 # 30Javacript-
+<h2>2017.8.10</h2>
+<p>Day19运用了canvas的其他知识点，有些我觉得不是很常用就没有记录下来，还有一些其他方面的知识：<br>
+1.Navigator接口表示用户代理的状态和标识，它允许脚本查询它和注册自己进行一些活动。通过navigator.mediaDevices.getUserMedia()来控制媒体对象，提示用户允许使用一个video/audio输入设备，如果用户给予许可，则返回一个promise对象。<code>navigator.mediaDevices.getUserMedia(constrate).then(function(mediaStream){...}).catch(function(error){...})</code><br>
+2.<ul>canvas:
+  <li>ctx.drawImage(image,dx,dy)更够将当前的视频流（video）中的一帧画在canvas中。</li>
+  <li>ctx.getImageData(sx,sy,sa,sh)返回一个ImageData对象，用来描述canvas区域隐含的像素数据，这个区域通过矩形表示，起始点为(sx, sy)、宽为sw、高为sh。</li>
+  <li>ctx.putImageData(image,dx,dy):该方法是 Canvas 2D API 将数据从已有的 ImageData 对象绘制到位图的方法。 如果提供了脏矩形，只能绘制矩形的像素。</li>
+  <li>imagedata中有大量的数据，其中分别代表了图片的颜色信息，分别为red，green，blue，alpha的值，因此我们可以同添加自定义滤镜，通过改变颜色的rgba的值，控制页面的效果。</li>
+  <li>canvas.toDataURL(type,emcoderOptions),返回一个包含图片展示的dataURL</li></ul></p>
 <h2>2017.8.9</h2>
 <p>Day18中map与reduce的使用技巧：<code>const seconds = timeNodes.map(time => time.dataset.time)
                          .map(timeCode => {
