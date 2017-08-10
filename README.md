@@ -1,5 +1,6 @@
 # 30Javacript-
 <h2>2017.8.10</h2>
+<p>中间跳了三章，从Day22接着开始，这章主要是一个Elememnt.getBoundingClientRect(),返回元素的大小及相对于视口的位置。</p>
 <p>Day19运用了canvas的其他知识点，有些我觉得不是很常用就没有记录下来，还有一些其他方面的知识：<br>
 1.Navigator接口表示用户代理的状态和标识，它允许脚本查询它和注册自己进行一些活动。通过navigator.mediaDevices.getUserMedia()来控制媒体对象，提示用户允许使用一个video/audio输入设备，如果用户给予许可，则返回一个promise对象。<code>navigator.mediaDevices.getUserMedia(constrate).then(function(mediaStream){...}).catch(function(error){...})</code><br>
 2.<ul>canvas:
