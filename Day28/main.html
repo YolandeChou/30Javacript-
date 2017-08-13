@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Speed Scrubber</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <video class="flex" width="765" height="430" src="../11 - Custom Video Player/mghxd.mp4" loop controls></video>
+    <div class="speed">
+      <div class="speed-bar">1×</div>
+    </div>
+  </div>
+
+<script>
+const speed = document.querySelector('.speed');
+const bar = document.querySelector('.speed-bar');
+const video = document.querySelector('video');
+function changeSpeed(e){
+	const height = e.pageY - this.offsetTop;
+	const max = 4;
+	const min = 0.4;
+	const percent = height/this.offsetHeight;
+	const playbackRate = (max-min)*percent+min;
+	bar.style.height = `${height}px`;
+	bar.textContent = playbackRate.toFixed(2) + 'x';
+    video.playbackRate = playbackRate;
+}
+speed.addEventListener('mousemove',changeSpeed);
+</script>
+</body>
+</html>
